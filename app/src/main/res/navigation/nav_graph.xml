@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.pankaj.encora.views.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/home_fragment">
+        <action
+            android:id="@+id/homeFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/actionSongDetailFragment"
+            app:destination="@id/songDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/songDetailFragment"
+        android:name="com.pankaj.encora.views.SongDetailFragment"
+        android:label="entry_detail_fragment"
+        tools:layout="@layout/song_detail_fragment">
+        <action
+            android:id="@+id/actionHomeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+</navigation>

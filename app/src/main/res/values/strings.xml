@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">EncoraTest</string>
+    <string name="alert">Alert</string>
+    <string name="ok">OK</string>
+    <string name="error_no_network">No Network Connection Available</string>
+    <string name="preference">sharedPreference</string>
+    <string name="isApiCalled">isApiCalled</string>
+    <string name="no_songs_downloaded">No Songs Downloaded</string>
+</resources>
